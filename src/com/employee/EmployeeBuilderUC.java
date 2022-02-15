@@ -8,10 +8,13 @@ public class EmployeeBuilderUC {
 
 		//variables
 		int rateperHour=20;
-		int empHours=0;
-		int salary=0;
-
-		double empCheck=Math.floor(Math.random()*10) % 2;
+		int working_days=10;
+		int empHours=0, empwage = 0;
+		int month = 10;
+		int total_working_days = 0, total_emphrs = 0;
+while (total_emphrs < month && total_working_days < working_days) {
+	total_working_days++;
+	double empCheck=Math.floor(Math.random()*10) % 3;
 		int empcheck=(int)empCheck;
 		
 		switch(empcheck){    
@@ -25,7 +28,9 @@ public class EmployeeBuilderUC {
 			empHours=0;  
 			break;
 		} 
-		salary=rateperHour*empHours;
-
-		System.out.println("Employee's Salary: "+salary);
-	}}
+		empwage=empHours * rateperHour;
+		total_emphrs+=empwage;
+		System.out.println("Employee's Salary: "+empwage);
+		System.out.println("Employee's total Salary: "+total_emphrs);
+		
+}}}
