@@ -4,14 +4,10 @@ public class EmployeeBuilderUC {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-				int is_fulltime=1;
-				double empCheck=Math.floor(Math.random()*10)%2;
-				
-				if(empCheck==is_fulltime) {
-					System.out.println("Employee is Present");
-				}
-				else
-					System.out.println("Employee is Absent");
-			}
+		final int wage_per_Hour=20;
+		final int fullday_Hour=8;
+		int dailyWages = wage_per_Hour*fullday_Hour;
+		System.out.println("Daily Employee wage is "+dailyWages);
 
+	}
 }
