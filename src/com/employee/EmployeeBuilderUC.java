@@ -10,7 +10,11 @@ public class EmployeeBuilderUC {
 		int rateperHour=20;
 		int empHours=0;
 		int salary=0;
-
+		int working_Hours=20;
+		int monthly_Salary=0;
+		
+		for(int d=1; d<=working_Hours; d++) {
+			
 		double empCheck=Math.floor(Math.random()*10) % 2;
 		int empcheck=(int)empCheck;
 		
@@ -25,7 +29,9 @@ public class EmployeeBuilderUC {
 			empHours=0;  
 			break;
 		} 
+		
 		salary=rateperHour*empHours;
-
-		System.out.println("Employee's Salary: "+salary);
-	}}
+		monthly_Salary=monthly_Salary+salary;
+		}
+		System.out.println("Employee Salary is "+salary);
+		System.out.println("Employee Monthly Salary is "+monthly_Salary);}}
