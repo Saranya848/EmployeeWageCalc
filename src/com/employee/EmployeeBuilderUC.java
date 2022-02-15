@@ -17,6 +17,8 @@ public class EmployeeBuilderUC {
 		else if(empCheck==isParttime) {
 			empHours=8;
 			System.out.println("part time");
+			salary=empHours*fulldayHour;
+			System.out.println("Employee salary is  "+salary);
 
 		}
 		else
@@ -24,7 +26,5 @@ public class EmployeeBuilderUC {
 			empHours=0;
 			System.out.println("Employee status");
 		}
-		salary=empHours*fulldayHour;
-		System.out.println("Employee salary is  "+salary);
 
 	}}
