@@ -25,7 +25,7 @@ public class EmployeeBuilderUC {
 			empHours=0;  
 			break;
 		} 
-		salary=rateperHour*empHours;
+		salary=rateperHour*empHours*12;
 
 		System.out.println("Employee's Salary: "+salary);
 	}}
